@@ -1,0 +1,223 @@
+%-------------------------
+% Resume in Latex
+% Author : Nishant Khandhar
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper, 15pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.55in}
+\addtolength{\evensidemargin}{-0.55in}
+\addtolength{\textwidth}{1.1in}
+\addtolength{\topmargin}{-.65in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-9pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-5pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-4pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Nishant Khandhar} \\ \vspace{2pt}
+    \small XXX-XXX-XXXX $|$ \href{mailto:your_mail_address}{\underline{abc@xyz.com}} $|$ 
+    \href{https://linkedin.com/in/nishant-khandhar}{\underline{linkedin.com/in/nishant-khandhar}} $|$
+    \href{https://github.com/nishant-k02}{\underline{github.com/nishant-k02}}
+\end{center}
+
+%-----------TECHNICAL SKILLS-----------
+
+\section{Technical Skills} 
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Dart, Java, C++, JavaScript} \\
+     \textbf{Frontend and Frameworks}{: ReactJS, Flutter, HTML, CSS, Bootstrap, JSP, Servlet, Full Stack development, Web Development.} \\
+     \textbf{Backend}{: NodeJS, ExpressJS, Django, Flask, PHP, Firebase} \\
+     \textbf{Database}{: SQL, MySQL, PostgreSQL, SQlite3, MongoDB, NoSQL, ElasticSearch} \\
+     \textbf{Developer Tools}{: Github, Visual Studio, Atom, PyCharm, IntelliJ, Eclipse, Android Studio, Jupyter Notebook, Postman} \\
+     \textbf{Libraries}{: Pandas, NumPy, Matplotlib, OpenCV, TensorFlow, sklearn, os, autogen, openAI}
+    }}
+ \end{itemize}
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Software Developer Intern - Android Developer}{Feb 2023 -- Mar 2023}
+      {Visanka Technologies}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Developed an \textbf{Android-based (JAVA)} Job Portal App simplifying job searches for seekers, while assisting employers in managing applications and optimizing the hiring process.}
+        \resumeItem{Developed features like Job Applications, Management, and User Authentication.}
+        \resumeItem{\textbf{Tech Stack:} Java, MySQL, XMAPP, Firebase, PHP, Android Studio, Github} \vspace{5pt}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Developer Intern - Web Developer}{Jun 2021 -- Aug 2021}
+      {The Sparks Foundation}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Developed an online banking system using \textbf{Flask} that enables account-to-account money transfer and keeps detailed transaction records to improve financial monitoring.}
+        \resumeItem{\textbf{Tech Stack:} Python, Flask, SQlite3, Pycharm, HTML, CSS}
+      \resumeItemListEnd
+      
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+   \resumeProjectHeading
+      {\textbf{Health Care AI Assistant}}{Sept 2024 -- Nov 2024}
+      \resumeItemListStart
+        \resumeItem{Developed an AI-powered healthcare assistant that enables users to describe symptoms and receive personalized medical suggestions  \textbf{using OpenAI's LLM through AutoGen} that analyses symptoms, retrieve relevant medicines, and provide a non-panic-inducing summary.}
+        \resumeItem{Integrated a Conversational User Bot to guide customers to classify order statuses (Refund, Return, or Escalate to Human) with 90\% accuracy, leveraging order IDs, payment details.}
+        \resumeItem{Implemented \textbf{GPT-based decision-making logic} using OCR-processed receipts to automate the detection of fraudulent transactions with 70\% accuracy, enabling precise classifications like Refund, Decline, or Escalate.}
+        \resumeItem{\textbf{Tech Stack:}  Flutter, Dart, FastAPI, Uvicorn, AutoGen, Open AI, XML, Python, RESTful API, PostgreSQL, Chroma DB, Python, MongoDB, Flask.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Car Damage Detection}}{Aug 2023 -- Mar 2024}
+      \resumeItemListStart
+        \resumeItem{Developed an end-to-end web app leveraging \textbf{Computer Vision} for precise vehicle damage detection and assessment with 90\% accuracy.}
+        \resumeItem{Trained a \textbf{Convolutional Neural Network (CNN)} on annotated vehicle images to predict damage severity.}
+        \resumeItem{\textbf{Tech Stack:} Python, Pandas, Django, OpenCV, TensorFlow, Keras, Jupyter Notebook, HTML, CSS.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Covid Statistics Analyzer}}{Apr 2021 -- Jul 2021}
+      \resumeItemListStart
+        \resumeItem{Created a \textbf{Power BI dashboard} to visualize live COVID-19 metrics country-wise, state-wise, and city-wise.}
+        \resumeItem{Integrated APIs to gather and parse data using Python, enhancing data accuracy by 50\%.}
+        \resumeItem{Visualized key features such as recovery rate, mortality rate, and critical case statistics for over 1,000 stakeholders.}
+        \resumeItem{\textbf{Tech Stack:} Python, Power BI, API Integration.}
+      \resumeItemListEnd
+
+    \resumeProjectHeading
+      {\textbf{Online Code Editor}}{Jul 2024 -- Aug 2024}
+      \resumeItemListStart
+        \resumeItem{Designed a responsive, user-friendly online code editor for real-time code writing, editing, and previewing.}
+        \resumeItem{Enabled seamless cross-device functionality with features like syntax highlighting and live preview.}
+        \resumeItem{\textbf{Tech Stack:} React, Bootstrap, CodeMirror, JavaScript, HTML, CSS.}
+      \resumeItemListEnd
+
+  % \resumeSubHeadingListEnd
+
+
+    % \resumeProjectHeading
+    %   {\textbf{Android Weather App}}{Apr 2022 -- May 2022}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed an Android application to provide real-time climate updates using \textbf{Weather API} based on user-input locations, delivering accurate weather data to over 500 users.}
+    %     \resumeItem{Integrated features such as temperature, humidity, wind speed, sunrise, and sunset time, improving user experience by 35\% through intuitive data presentation and on-demand weather insights.}
+    %     \resumeItem{\textbf{Tech Stack:} Java, Android Studio, Weather API (that enhanced application efficiency by 40\%)}
+    %   \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Illinois Institute of Technology }{Chicago, IL}
+      {Master of Computer Science |\textbf{ GPA: 4.00}}{May 2026}
+        \resumeItemListStart
+          \resumeItem{Top Courses: Enterprise Web Application, Machine Learning, Software Systems Architecture, Software Modeling Development using UML, Mobile Application Development}
+        \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------RESEARCH PUBLICATION-----------
+\section{Research Publications}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \item \textbf{\href{https://www.jetir.org/view?paper=JETIR2311193}{Car Damage Detection Using Computer Vision}} 
+    \newline Journal of Emerging Technologies and Innovative Research (JETIR), Volume 10, Issue 11, 2023.
+\end{itemize}
+
+%-----------COMMUNITY AND LEADERSHIP-----------
+\section{Community \& Leadership}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Android Developer Lead}{2022 -- 2023}
+      {Google Developer Student Clubs (GDSC)}{Pune, India}
+      \resumeItemListStart
+        \resumeItem{Led a team of 50 students in creating innovative mobile applications. Organized and conducted seminars on Android development best practices and emerging technologies.}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-------------------------------------------
+\end{document}
